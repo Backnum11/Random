@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+</body>
+<script>
+    menu=['스파게티','감자탕','삼겹살','국밥'];
+    price=[7000,8000,9000,100000];
+    let rand= Math.floor(Math.random()*menu.length);
+    imagelist=[
+        '<img src="스파게티.jpg" alt="스파게티">',
+        '<img src="감자탕.jpg" alt="감자탕">',
+        '<img src="삼겹살.jpg" alt="삼겹살">',
+        '<img src="국밥.jpg" alt="국밥">'
+    ]
+    document.write(imagelist[rand],'<br\>');
+    document.write('오늘 점심 메뉴로 ',menu[rand]+'을(를) 추천합니다'+'<br\>'+'가격은 ',price[rand]+'원 입니다.');
+</script>
+</html>
